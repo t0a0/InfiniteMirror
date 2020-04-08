@@ -1,0 +1,1028 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		165D9C27243E6C1A00A81408 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 165D9C26243E6C1A00A81408 /* main.cpp */; };
+		165D9CFF243E6D7B00A81408 /* power_mgt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 165D9C2E243E6D7B00A81408 /* power_mgt.cpp */; };
+		165D9D00243E6D7B00A81408 /* colorutils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 165D9C90243E6D7B00A81408 /* colorutils.cpp */; };
+		165D9D01243E6D7B00A81408 /* lib8tion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 165D9C98243E6D7B00A81408 /* lib8tion.cpp */; };
+		165D9D02243E6D7B00A81408 /* FastLED.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 165D9C9C243E6D7B00A81408 /* FastLED.cpp */; };
+		165D9D03243E6D7B00A81408 /* noise.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 165D9CA0243E6D7B00A81408 /* noise.cpp */; };
+		165D9D04243E6D7B00A81408 /* hsv2rgb.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 165D9CA6243E6D7B00A81408 /* hsv2rgb.cpp */; };
+		165D9D05243E6D7B00A81408 /* wiring.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 165D9CA7243E6D7B00A81408 /* wiring.cpp */; };
+		165D9D06243E6D7B00A81408 /* platforms.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 165D9CAC243E6D7B00A81408 /* platforms.cpp */; };
+		165D9D07243E6D7B00A81408 /* bitswap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 165D9CAD243E6D7B00A81408 /* bitswap.cpp */; };
+		165D9D08243E6D7B00A81408 /* colorpalettes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 165D9CF1243E6D7B00A81408 /* colorpalettes.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		165D9C21243E6C1A00A81408 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		165D9C23243E6C1A00A81408 /* infm */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = infm; sourceTree = BUILT_PRODUCTS_DIR; };
+		165D9C26243E6C1A00A81408 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		165D9C2E243E6D7B00A81408 /* power_mgt.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = power_mgt.cpp; sourceTree = "<group>"; };
+		165D9C2F243E6D7B00A81408 /* noise.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = noise.h; sourceTree = "<group>"; };
+		165D9C33243E6D7B00A81408 /* led_sysdefs_esp32.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = led_sysdefs_esp32.h; sourceTree = "<group>"; };
+		165D9C34243E6D7B00A81408 /* fastled_esp32.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fastled_esp32.h; sourceTree = "<group>"; };
+		165D9C35243E6D7B00A81408 /* clockless_esp32.h.orig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = clockless_esp32.h.orig; sourceTree = "<group>"; };
+		165D9C36243E6D7B00A81408 /* clockless_i2s_esp32.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = clockless_i2s_esp32.h; sourceTree = "<group>"; };
+		165D9C37243E6D7B00A81408 /* fastpin_esp32.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fastpin_esp32.h; sourceTree = "<group>"; };
+		165D9C38243E6D7B00A81408 /* clockless_rmt_esp32.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = clockless_rmt_esp32.h; sourceTree = "<group>"; };
+		165D9C39243E6D7B00A81408 /* clockless_block_esp32.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = clockless_block_esp32.h; sourceTree = "<group>"; };
+		165D9C3B243E6D7B00A81408 /* clockless_esp8266.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = clockless_esp8266.h; sourceTree = "<group>"; };
+		165D9C3C243E6D7B00A81408 /* fastled_esp8266.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fastled_esp8266.h; sourceTree = "<group>"; };
+		165D9C3D243E6D7B00A81408 /* led_sysdefs_esp8266.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = led_sysdefs_esp8266.h; sourceTree = "<group>"; };
+		165D9C3E243E6D7B00A81408 /* clockless_block_esp8266.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = clockless_block_esp8266.h; sourceTree = "<group>"; };
+		165D9C3F243E6D7B00A81408 /* fastpin_esp8266.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fastpin_esp8266.h; sourceTree = "<group>"; };
+		165D9C41243E6D7B00A81408 /* fastpin_avr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fastpin_avr.h; sourceTree = "<group>"; };
+		165D9C42243E6D7B00A81408 /* fastspi_avr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fastspi_avr.h; sourceTree = "<group>"; };
+		165D9C43243E6D7B00A81408 /* clockless_trinket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = clockless_trinket.h; sourceTree = "<group>"; };
+		165D9C44243E6D7B00A81408 /* fastled_avr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fastled_avr.h; sourceTree = "<group>"; };
+		165D9C45243E6D7B00A81408 /* led_sysdefs_avr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = led_sysdefs_avr.h; sourceTree = "<group>"; };
+		165D9C48243E6D7B00A81408 /* clockless_block_arm_sam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = clockless_block_arm_sam.h; sourceTree = "<group>"; };
+		165D9C49243E6D7B00A81408 /* fastpin_arm_sam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fastpin_arm_sam.h; sourceTree = "<group>"; };
+		165D9C4A243E6D7B00A81408 /* fastspi_arm_sam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fastspi_arm_sam.h; sourceTree = "<group>"; };
+		165D9C4B243E6D7B00A81408 /* led_sysdefs_arm_sam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = led_sysdefs_arm_sam.h; sourceTree = "<group>"; };
+		165D9C4C243E6D7B00A81408 /* fastled_arm_sam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fastled_arm_sam.h; sourceTree = "<group>"; };
+		165D9C4D243E6D7B00A81408 /* clockless_arm_sam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = clockless_arm_sam.h; sourceTree = "<group>"; };
+		165D9C4F243E6D7B00A81408 /* clockless_block_arm_k66.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = clockless_block_arm_k66.h; sourceTree = "<group>"; };
+		165D9C50243E6D7B00A81408 /* fastpin_arm_k66.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fastpin_arm_k66.h; sourceTree = "<group>"; };
+		165D9C51243E6D7B00A81408 /* fastspi_arm_k66.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fastspi_arm_k66.h; sourceTree = "<group>"; };
+		165D9C52243E6D7B00A81408 /* led_sysdefs_arm_k66.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = led_sysdefs_arm_k66.h; sourceTree = "<group>"; };
+		165D9C53243E6D7B00A81408 /* fastled_arm_k66.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fastled_arm_k66.h; sourceTree = "<group>"; };
+		165D9C54243E6D7B00A81408 /* clockless_arm_k66.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = clockless_arm_k66.h; sourceTree = "<group>"; };
+		165D9C56243E6D7B00A81408 /* clockless_arm_nrf51.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = clockless_arm_nrf51.h; sourceTree = "<group>"; };
+		165D9C57243E6D7B00A81408 /* fastspi_arm_nrf51.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fastspi_arm_nrf51.h; sourceTree = "<group>"; };
+		165D9C58243E6D7B00A81408 /* fastpin_arm_nrf51.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fastpin_arm_nrf51.h; sourceTree = "<group>"; };
+		165D9C59243E6D7B00A81408 /* led_sysdefs_arm_nrf51.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = led_sysdefs_arm_nrf51.h; sourceTree = "<group>"; };
+		165D9C5A243E6D7B00A81408 /* fastled_arm_nrf51.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fastled_arm_nrf51.h; sourceTree = "<group>"; };
+		165D9C5C243E6D7B00A81408 /* fastled_arm_k20.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fastled_arm_k20.h; sourceTree = "<group>"; };
+		165D9C5D243E6D7B00A81408 /* smartmatrix_t3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = smartmatrix_t3.h; sourceTree = "<group>"; };
+		165D9C5E243E6D7B00A81408 /* ws2812serial_controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ws2812serial_controller.h; sourceTree = "<group>"; };
+		165D9C5F243E6D7B00A81408 /* clockless_arm_k20.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = clockless_arm_k20.h; sourceTree = "<group>"; };
+		165D9C60243E6D7B00A81408 /* octows2811_controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = octows2811_controller.h; sourceTree = "<group>"; };
+		165D9C61243E6D7B00A81408 /* clockless_block_arm_k20.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = clockless_block_arm_k20.h; sourceTree = "<group>"; };
+		165D9C62243E6D7B00A81408 /* fastpin_arm_k20.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fastpin_arm_k20.h; sourceTree = "<group>"; };
+		165D9C63243E6D7B00A81408 /* fastspi_arm_k20.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fastspi_arm_k20.h; sourceTree = "<group>"; };
+		165D9C64243E6D7B00A81408 /* led_sysdefs_arm_k20.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = led_sysdefs_arm_k20.h; sourceTree = "<group>"; };
+		165D9C66243E6D7B00A81408 /* fastpin_arm_kl26.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fastpin_arm_kl26.h; sourceTree = "<group>"; };
+		165D9C67243E6D7B00A81408 /* led_sysdefs_arm_kl26.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = led_sysdefs_arm_kl26.h; sourceTree = "<group>"; };
+		165D9C68243E6D7B00A81408 /* fastspi_arm_kl26.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fastspi_arm_kl26.h; sourceTree = "<group>"; };
+		165D9C69243E6D7B00A81408 /* clockless_arm_kl26.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = clockless_arm_kl26.h; sourceTree = "<group>"; };
+		165D9C6A243E6D7B00A81408 /* fastled_arm_kl26.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fastled_arm_kl26.h; sourceTree = "<group>"; };
+		165D9C6C243E6D7B00A81408 /* m0clockless.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = m0clockless.h; sourceTree = "<group>"; };
+		165D9C6E243E6D7B00A81408 /* clockless_arm_stm32.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = clockless_arm_stm32.h; sourceTree = "<group>"; };
+		165D9C6F243E6D7B00A81408 /* fastpin_arm_stm32.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fastpin_arm_stm32.h; sourceTree = "<group>"; };
+		165D9C70243E6D7B00A81408 /* fastled_arm_stm32.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fastled_arm_stm32.h; sourceTree = "<group>"; };
+		165D9C71243E6D7B00A81408 /* cm3_regs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cm3_regs.h; sourceTree = "<group>"; };
+		165D9C72243E6D7B00A81408 /* led_sysdefs_arm_stm32.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = led_sysdefs_arm_stm32.h; sourceTree = "<group>"; };
+		165D9C74243E6D7B00A81408 /* fastled_arm_d21.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fastled_arm_d21.h; sourceTree = "<group>"; };
+		165D9C75243E6D7B00A81408 /* clockless_arm_d21.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = clockless_arm_d21.h; sourceTree = "<group>"; };
+		165D9C76243E6D7B00A81408 /* fastpin_arm_d21.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fastpin_arm_d21.h; sourceTree = "<group>"; };
+		165D9C77243E6D7B00A81408 /* led_sysdefs_arm_d21.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = led_sysdefs_arm_d21.h; sourceTree = "<group>"; };
+		165D9C79243E6D7B00A81408 /* fastled_arm_mxrt1062.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fastled_arm_mxrt1062.h; sourceTree = "<group>"; };
+		165D9C7A243E6D7B00A81408 /* led_sysdefs_arm_mxrt1062.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = led_sysdefs_arm_mxrt1062.h; sourceTree = "<group>"; };
+		165D9C7B243E6D7B00A81408 /* fastpin_arm_mxrt1062.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fastpin_arm_mxrt1062.h; sourceTree = "<group>"; };
+		165D9C7C243E6D7B00A81408 /* clockless_arm_mxrt1062.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = clockless_arm_mxrt1062.h; sourceTree = "<group>"; };
+		165D9C7D243E6D7B00A81408 /* fastspi_arm_mxrt1062.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fastspi_arm_mxrt1062.h; sourceTree = "<group>"; };
+		165D9C7E243E6D7B00A81408 /* block_clockless_arm_mxrt1062.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = block_clockless_arm_mxrt1062.h; sourceTree = "<group>"; };
+		165D9C80243E6D7B00A81408 /* arbiter_nrf52.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = arbiter_nrf52.h; sourceTree = "<group>"; };
+		165D9C81243E6D7B00A81408 /* fastpin_arm_nrf52_variants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fastpin_arm_nrf52_variants.h; sourceTree = "<group>"; };
+		165D9C82243E6D7B00A81408 /* fastspi_arm_nrf52.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fastspi_arm_nrf52.h; sourceTree = "<group>"; };
+		165D9C83243E6D7B00A81408 /* clockless_arm_nrf52.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = clockless_arm_nrf52.h; sourceTree = "<group>"; };
+		165D9C84243E6D7B00A81408 /* led_sysdefs_arm_nrf52.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = led_sysdefs_arm_nrf52.h; sourceTree = "<group>"; };
+		165D9C85243E6D7B00A81408 /* fastled_arm_nrf52.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fastled_arm_nrf52.h; sourceTree = "<group>"; };
+		165D9C86243E6D7B00A81408 /* fastpin_arm_nrf52.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fastpin_arm_nrf52.h; sourceTree = "<group>"; };
+		165D9C88243E6D7B00A81408 /* led_sysdefs_arm_d51.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = led_sysdefs_arm_d51.h; sourceTree = "<group>"; };
+		165D9C89243E6D7B00A81408 /* fastpin_arm_d51.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fastpin_arm_d51.h; sourceTree = "<group>"; };
+		165D9C8A243E6D7B00A81408 /* clockless_arm_d51.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = clockless_arm_d51.h; sourceTree = "<group>"; };
+		165D9C8B243E6D7B00A81408 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		165D9C8C243E6D7B00A81408 /* fastled_arm_d51.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fastled_arm_d51.h; sourceTree = "<group>"; };
+		165D9C8D243E6D7B00A81408 /* bitswap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bitswap.h; sourceTree = "<group>"; };
+		165D9C8E243E6D7B00A81408 /* fastspi_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fastspi_types.h; sourceTree = "<group>"; };
+		165D9C8F243E6D7B00A81408 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		165D9C90243E6D7B00A81408 /* colorutils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = colorutils.cpp; sourceTree = "<group>"; };
+		165D9C91243E6D7B00A81408 /* pixelset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pixelset.h; sourceTree = "<group>"; };
+		165D9C92243E6D7B00A81408 /* fastled_progmem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fastled_progmem.h; sourceTree = "<group>"; };
+		165D9C93243E6D7B00A81408 /* keywords.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = keywords.txt; sourceTree = "<group>"; };
+		165D9C94243E6D7B00A81408 /* led_sysdefs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = led_sysdefs.h; sourceTree = "<group>"; };
+		165D9C95243E6D7B00A81408 /* hsv2rgb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hsv2rgb.h; sourceTree = "<group>"; };
+		165D9C96243E6D7B00A81408 /* fastled_delay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fastled_delay.h; sourceTree = "<group>"; };
+		165D9C97243E6D7B00A81408 /* colorpalettes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = colorpalettes.h; sourceTree = "<group>"; };
+		165D9C98243E6D7B00A81408 /* lib8tion.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = lib8tion.cpp; sourceTree = "<group>"; };
+		165D9C99243E6D7B00A81408 /* color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = color.h; sourceTree = "<group>"; };
+		165D9C9A243E6D7B00A81408 /* component.mk */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = component.mk; sourceTree = "<group>"; };
+		165D9C9B243E6D7B00A81408 /* fastspi_ref.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fastspi_ref.h; sourceTree = "<group>"; };
+		165D9C9C243E6D7B00A81408 /* FastLED.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FastLED.cpp; sourceTree = "<group>"; };
+		165D9C9E243E6D7B00A81408 /* mainpage.dox */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = mainpage.dox; sourceTree = "<group>"; };
+		165D9C9F243E6D7B00A81408 /* Doxyfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Doxyfile; sourceTree = "<group>"; };
+		165D9CA0243E6D7B00A81408 /* noise.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = noise.cpp; sourceTree = "<group>"; };
+		165D9CA1243E6D7B00A81408 /* PORTING.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = PORTING.md; sourceTree = "<group>"; };
+		165D9CA2243E6D7B00A81408 /* fastspi_bitbang.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fastspi_bitbang.h; sourceTree = "<group>"; };
+		165D9CA3243E6D7B00A81408 /* controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = controller.h; sourceTree = "<group>"; };
+		165D9CA4243E6D7B00A81408 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		165D9CA5243E6D7B00A81408 /* fastled_config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fastled_config.h; sourceTree = "<group>"; };
+		165D9CA6243E6D7B00A81408 /* hsv2rgb.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = hsv2rgb.cpp; sourceTree = "<group>"; };
+		165D9CA7243E6D7B00A81408 /* wiring.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = wiring.cpp; sourceTree = "<group>"; };
+		165D9CA8243E6D7B00A81408 /* library.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = library.json; sourceTree = "<group>"; };
+		165D9CA9243E6D7B00A81408 /* colorutils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = colorutils.h; sourceTree = "<group>"; };
+		165D9CAA243E6D7B00A81408 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		165D9CAB243E6D7B00A81408 /* chipsets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = chipsets.h; sourceTree = "<group>"; };
+		165D9CAC243E6D7B00A81408 /* platforms.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = platforms.cpp; sourceTree = "<group>"; };
+		165D9CAD243E6D7B00A81408 /* bitswap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bitswap.cpp; sourceTree = "<group>"; };
+		165D9CAE243E6D7B00A81408 /* pixeltypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pixeltypes.h; sourceTree = "<group>"; };
+		165D9CAF243E6D7B00A81408 /* fastspi_dma.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fastspi_dma.h; sourceTree = "<group>"; };
+		165D9CB0243E6D7B00A81408 /* fastpin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fastpin.h; sourceTree = "<group>"; };
+		165D9CB3243E6D7B00A81408 /* Blink.ino */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Blink.ino; sourceTree = "<group>"; };
+		165D9CB5243E6D7B00A81408 /* Cylon.ino */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cylon.ino; sourceTree = "<group>"; };
+		165D9CB7243E6D7B00A81408 /* DemoReel100.ino */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DemoReel100.ino; sourceTree = "<group>"; };
+		165D9CB9243E6D7B00A81408 /* RGBCalibrate.ino */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = RGBCalibrate.ino; sourceTree = "<group>"; };
+		165D9CBC243E6D7B00A81408 /* ParallelOutputDemo.ino */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ParallelOutputDemo.ino; sourceTree = "<group>"; };
+		165D9CBE243E6D7B00A81408 /* ArrayOfLedArrays.ino */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ArrayOfLedArrays.ino; sourceTree = "<group>"; };
+		165D9CC0243E6D7B00A81408 /* MultiArrays.ino */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MultiArrays.ino; sourceTree = "<group>"; };
+		165D9CC2243E6D7B00A81408 /* OctoWS2811Demo.ino */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OctoWS2811Demo.ino; sourceTree = "<group>"; };
+		165D9CC4243E6D7B00A81408 /* MirroringSample.ino */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MirroringSample.ino; sourceTree = "<group>"; };
+		165D9CC6243E6D7B00A81408 /* MultipleStripsInOneArray.ino */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MultipleStripsInOneArray.ino; sourceTree = "<group>"; };
+		165D9CC8243E6D7B00A81408 /* FirstLight.ino */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FirstLight.ino; sourceTree = "<group>"; };
+		165D9CCA243E6D7B00A81408 /* NoisePlusPalette.ino */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NoisePlusPalette.ino; sourceTree = "<group>"; };
+		165D9CCC243E6D7B00A81408 /* SmartMatrix.ino */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SmartMatrix.ino; sourceTree = "<group>"; };
+		165D9CCE243E6D7B00A81408 /* RGBSetDemo.ino */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = RGBSetDemo.ino; sourceTree = "<group>"; };
+		165D9CD0243E6D7B00A81408 /* XYMatrix.ino */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = XYMatrix.ino; sourceTree = "<group>"; };
+		165D9CD2243E6D7B00A81408 /* Pintest.ino */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Pintest.ino; sourceTree = "<group>"; };
+		165D9CD4243E6D7B00A81408 /* Fire2012WithPalette.ino */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Fire2012WithPalette.ino; sourceTree = "<group>"; };
+		165D9CD6243E6D7B00A81408 /* ColorPalette.ino */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ColorPalette.ino; sourceTree = "<group>"; };
+		165D9CD8243E6D7B00A81408 /* Fire2012.ino */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Fire2012.ino; sourceTree = "<group>"; };
+		165D9CDA243E6D7B00A81408 /* TwinkleFox.ino */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TwinkleFox.ino; sourceTree = "<group>"; };
+		165D9CDC243E6D7B00A81408 /* ColorTemperature.ino */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ColorTemperature.ino; sourceTree = "<group>"; };
+		165D9CDE243E6D7B00A81408 /* Pride2015.ino */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Pride2015.ino; sourceTree = "<group>"; };
+		165D9CE0243E6D7B00A81408 /* Noise.ino */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Noise.ino; sourceTree = "<group>"; };
+		165D9CE2243E6D7B00A81408 /* AnalogOutput.ino */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AnalogOutput.ino; sourceTree = "<group>"; };
+		165D9CE4243E6D7B00A81408 /* Pacifica.ino */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Pacifica.ino; sourceTree = "<group>"; };
+		165D9CE7243E6D7B00A81408 /* PJRCSpectrumAnalyzer.ino */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PJRCSpectrumAnalyzer.ino; sourceTree = "<group>"; };
+		165D9CE9243E6D7B00A81408 /* NoisePlayground.ino */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NoisePlayground.ino; sourceTree = "<group>"; };
+		165D9CEB243E6D7B00A81408 /* trig8.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = trig8.h; sourceTree = "<group>"; };
+		165D9CEC243E6D7B00A81408 /* random8.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = random8.h; sourceTree = "<group>"; };
+		165D9CED243E6D7B00A81408 /* math8.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = math8.h; sourceTree = "<group>"; };
+		165D9CEE243E6D7B00A81408 /* scale8.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scale8.h; sourceTree = "<group>"; };
+		165D9CEF243E6D7B00A81408 /* release_notes.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = release_notes.md; sourceTree = "<group>"; };
+		165D9CF0243E6D7B00A81408 /* fastspi_nop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fastspi_nop.h; sourceTree = "<group>"; };
+		165D9CF1243E6D7B00A81408 /* colorpalettes.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = colorpalettes.cpp; sourceTree = "<group>"; };
+		165D9CF2243E6D7B00A81408 /* platforms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = platforms.h; sourceTree = "<group>"; };
+		165D9CF3243E6D7B00A81408 /* lib8tion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lib8tion.h; sourceTree = "<group>"; };
+		165D9CF4243E6D7B00A81408 /* library.properties */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = library.properties; sourceTree = "<group>"; };
+		165D9CF5243E6D7B00A81408 /* cpp_compat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cpp_compat.h; sourceTree = "<group>"; };
+		165D9CF6243E6D7B00A81408 /* fastspi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fastspi.h; sourceTree = "<group>"; };
+		165D9CF7243E6D7B00A81408 /* FastLED.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FastLED.h; sourceTree = "<group>"; };
+		165D9CF8243E6D7B00A81408 /* dmx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dmx.h; sourceTree = "<group>"; };
+		165D9CFA243E6D7B00A81408 /* RainbowDemo.bin.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = RainbowDemo.bin.zip; sourceTree = "<group>"; };
+		165D9CFB243E6D7B00A81408 /* RainbowDemo.s65 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = RainbowDemo.s65; sourceTree = "<group>"; };
+		165D9CFC243E6D7B00A81408 /* FastLED6502.s65 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FastLED6502.s65; sourceTree = "<group>"; };
+		165D9CFD243E6D7B00A81408 /* AppleII.s65 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AppleII.s65; sourceTree = "<group>"; };
+		165D9CFE243E6D7B00A81408 /* power_mgt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = power_mgt.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		165D9C20243E6C1A00A81408 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		165D9C1A243E6C1A00A81408 = {
+			isa = PBXGroup;
+			children = (
+				165D9C25243E6C1A00A81408 /* infm */,
+				165D9C24243E6C1A00A81408 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		165D9C24243E6C1A00A81408 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				165D9C23243E6C1A00A81408 /* infm */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		165D9C25243E6C1A00A81408 /* infm */ = {
+			isa = PBXGroup;
+			children = (
+				165D9C2D243E6D7B00A81408 /* FastLED-3.3.3 */,
+				165D9C26243E6C1A00A81408 /* main.cpp */,
+			);
+			path = infm;
+			sourceTree = "<group>";
+		};
+		165D9C2D243E6D7B00A81408 /* FastLED-3.3.3 */ = {
+			isa = PBXGroup;
+			children = (
+				165D9C2E243E6D7B00A81408 /* power_mgt.cpp */,
+				165D9C2F243E6D7B00A81408 /* noise.h */,
+				165D9C30243E6D7B00A81408 /* platforms */,
+				165D9C8D243E6D7B00A81408 /* bitswap.h */,
+				165D9C8E243E6D7B00A81408 /* fastspi_types.h */,
+				165D9C8F243E6D7B00A81408 /* LICENSE */,
+				165D9C90243E6D7B00A81408 /* colorutils.cpp */,
+				165D9C91243E6D7B00A81408 /* pixelset.h */,
+				165D9C92243E6D7B00A81408 /* fastled_progmem.h */,
+				165D9C93243E6D7B00A81408 /* keywords.txt */,
+				165D9C94243E6D7B00A81408 /* led_sysdefs.h */,
+				165D9C95243E6D7B00A81408 /* hsv2rgb.h */,
+				165D9C96243E6D7B00A81408 /* fastled_delay.h */,
+				165D9C97243E6D7B00A81408 /* colorpalettes.h */,
+				165D9C98243E6D7B00A81408 /* lib8tion.cpp */,
+				165D9C99243E6D7B00A81408 /* color.h */,
+				165D9C9A243E6D7B00A81408 /* component.mk */,
+				165D9C9B243E6D7B00A81408 /* fastspi_ref.h */,
+				165D9C9C243E6D7B00A81408 /* FastLED.cpp */,
+				165D9C9D243E6D7B00A81408 /* docs */,
+				165D9CA0243E6D7B00A81408 /* noise.cpp */,
+				165D9CA1243E6D7B00A81408 /* PORTING.md */,
+				165D9CA2243E6D7B00A81408 /* fastspi_bitbang.h */,
+				165D9CA3243E6D7B00A81408 /* controller.h */,
+				165D9CA4243E6D7B00A81408 /* README.md */,
+				165D9CA5243E6D7B00A81408 /* fastled_config.h */,
+				165D9CA6243E6D7B00A81408 /* hsv2rgb.cpp */,
+				165D9CA7243E6D7B00A81408 /* wiring.cpp */,
+				165D9CA8243E6D7B00A81408 /* library.json */,
+				165D9CA9243E6D7B00A81408 /* colorutils.h */,
+				165D9CAA243E6D7B00A81408 /* .gitignore */,
+				165D9CAB243E6D7B00A81408 /* chipsets.h */,
+				165D9CAC243E6D7B00A81408 /* platforms.cpp */,
+				165D9CAD243E6D7B00A81408 /* bitswap.cpp */,
+				165D9CAE243E6D7B00A81408 /* pixeltypes.h */,
+				165D9CAF243E6D7B00A81408 /* fastspi_dma.h */,
+				165D9CB0243E6D7B00A81408 /* fastpin.h */,
+				165D9CB1243E6D7B00A81408 /* examples */,
+				165D9CEA243E6D7B00A81408 /* lib8tion */,
+				165D9CEF243E6D7B00A81408 /* release_notes.md */,
+				165D9CF0243E6D7B00A81408 /* fastspi_nop.h */,
+				165D9CF1243E6D7B00A81408 /* colorpalettes.cpp */,
+				165D9CF2243E6D7B00A81408 /* platforms.h */,
+				165D9CF3243E6D7B00A81408 /* lib8tion.h */,
+				165D9CF4243E6D7B00A81408 /* library.properties */,
+				165D9CF5243E6D7B00A81408 /* cpp_compat.h */,
+				165D9CF6243E6D7B00A81408 /* fastspi.h */,
+				165D9CF7243E6D7B00A81408 /* FastLED.h */,
+				165D9CF8243E6D7B00A81408 /* dmx.h */,
+				165D9CF9243E6D7B00A81408 /* extras */,
+				165D9CFE243E6D7B00A81408 /* power_mgt.h */,
+			);
+			path = "FastLED-3.3.3";
+			sourceTree = "<group>";
+		};
+		165D9C30243E6D7B00A81408 /* platforms */ = {
+			isa = PBXGroup;
+			children = (
+				165D9C31243E6D7B00A81408 /* esp */,
+				165D9C40243E6D7B00A81408 /* avr */,
+				165D9C46243E6D7B00A81408 /* arm */,
+			);
+			path = platforms;
+			sourceTree = "<group>";
+		};
+		165D9C31243E6D7B00A81408 /* esp */ = {
+			isa = PBXGroup;
+			children = (
+				165D9C32243E6D7B00A81408 /* 32 */,
+				165D9C3A243E6D7B00A81408 /* 8266 */,
+			);
+			path = esp;
+			sourceTree = "<group>";
+		};
+		165D9C32243E6D7B00A81408 /* 32 */ = {
+			isa = PBXGroup;
+			children = (
+				165D9C33243E6D7B00A81408 /* led_sysdefs_esp32.h */,
+				165D9C34243E6D7B00A81408 /* fastled_esp32.h */,
+				165D9C35243E6D7B00A81408 /* clockless_esp32.h.orig */,
+				165D9C36243E6D7B00A81408 /* clockless_i2s_esp32.h */,
+				165D9C37243E6D7B00A81408 /* fastpin_esp32.h */,
+				165D9C38243E6D7B00A81408 /* clockless_rmt_esp32.h */,
+				165D9C39243E6D7B00A81408 /* clockless_block_esp32.h */,
+			);
+			path = 32;
+			sourceTree = "<group>";
+		};
+		165D9C3A243E6D7B00A81408 /* 8266 */ = {
+			isa = PBXGroup;
+			children = (
+				165D9C3B243E6D7B00A81408 /* clockless_esp8266.h */,
+				165D9C3C243E6D7B00A81408 /* fastled_esp8266.h */,
+				165D9C3D243E6D7B00A81408 /* led_sysdefs_esp8266.h */,
+				165D9C3E243E6D7B00A81408 /* clockless_block_esp8266.h */,
+				165D9C3F243E6D7B00A81408 /* fastpin_esp8266.h */,
+			);
+			path = 8266;
+			sourceTree = "<group>";
+		};
+		165D9C40243E6D7B00A81408 /* avr */ = {
+			isa = PBXGroup;
+			children = (
+				165D9C41243E6D7B00A81408 /* fastpin_avr.h */,
+				165D9C42243E6D7B00A81408 /* fastspi_avr.h */,
+				165D9C43243E6D7B00A81408 /* clockless_trinket.h */,
+				165D9C44243E6D7B00A81408 /* fastled_avr.h */,
+				165D9C45243E6D7B00A81408 /* led_sysdefs_avr.h */,
+			);
+			path = avr;
+			sourceTree = "<group>";
+		};
+		165D9C46243E6D7B00A81408 /* arm */ = {
+			isa = PBXGroup;
+			children = (
+				165D9C47243E6D7B00A81408 /* sam */,
+				165D9C4E243E6D7B00A81408 /* k66 */,
+				165D9C55243E6D7B00A81408 /* nrf51 */,
+				165D9C5B243E6D7B00A81408 /* k20 */,
+				165D9C65243E6D7B00A81408 /* kl26 */,
+				165D9C6B243E6D7B00A81408 /* common */,
+				165D9C6D243E6D7B00A81408 /* stm32 */,
+				165D9C73243E6D7B00A81408 /* d21 */,
+				165D9C78243E6D7B00A81408 /* mxrt1062 */,
+				165D9C7F243E6D7B00A81408 /* nrf52 */,
+				165D9C87243E6D7B00A81408 /* d51 */,
+			);
+			path = arm;
+			sourceTree = "<group>";
+		};
+		165D9C47243E6D7B00A81408 /* sam */ = {
+			isa = PBXGroup;
+			children = (
+				165D9C48243E6D7B00A81408 /* clockless_block_arm_sam.h */,
+				165D9C49243E6D7B00A81408 /* fastpin_arm_sam.h */,
+				165D9C4A243E6D7B00A81408 /* fastspi_arm_sam.h */,
+				165D9C4B243E6D7B00A81408 /* led_sysdefs_arm_sam.h */,
+				165D9C4C243E6D7B00A81408 /* fastled_arm_sam.h */,
+				165D9C4D243E6D7B00A81408 /* clockless_arm_sam.h */,
+			);
+			path = sam;
+			sourceTree = "<group>";
+		};
+		165D9C4E243E6D7B00A81408 /* k66 */ = {
+			isa = PBXGroup;
+			children = (
+				165D9C4F243E6D7B00A81408 /* clockless_block_arm_k66.h */,
+				165D9C50243E6D7B00A81408 /* fastpin_arm_k66.h */,
+				165D9C51243E6D7B00A81408 /* fastspi_arm_k66.h */,
+				165D9C52243E6D7B00A81408 /* led_sysdefs_arm_k66.h */,
+				165D9C53243E6D7B00A81408 /* fastled_arm_k66.h */,
+				165D9C54243E6D7B00A81408 /* clockless_arm_k66.h */,
+			);
+			path = k66;
+			sourceTree = "<group>";
+		};
+		165D9C55243E6D7B00A81408 /* nrf51 */ = {
+			isa = PBXGroup;
+			children = (
+				165D9C56243E6D7B00A81408 /* clockless_arm_nrf51.h */,
+				165D9C57243E6D7B00A81408 /* fastspi_arm_nrf51.h */,
+				165D9C58243E6D7B00A81408 /* fastpin_arm_nrf51.h */,
+				165D9C59243E6D7B00A81408 /* led_sysdefs_arm_nrf51.h */,
+				165D9C5A243E6D7B00A81408 /* fastled_arm_nrf51.h */,
+			);
+			path = nrf51;
+			sourceTree = "<group>";
+		};
+		165D9C5B243E6D7B00A81408 /* k20 */ = {
+			isa = PBXGroup;
+			children = (
+				165D9C5C243E6D7B00A81408 /* fastled_arm_k20.h */,
+				165D9C5D243E6D7B00A81408 /* smartmatrix_t3.h */,
+				165D9C5E243E6D7B00A81408 /* ws2812serial_controller.h */,
+				165D9C5F243E6D7B00A81408 /* clockless_arm_k20.h */,
+				165D9C60243E6D7B00A81408 /* octows2811_controller.h */,
+				165D9C61243E6D7B00A81408 /* clockless_block_arm_k20.h */,
+				165D9C62243E6D7B00A81408 /* fastpin_arm_k20.h */,
+				165D9C63243E6D7B00A81408 /* fastspi_arm_k20.h */,
+				165D9C64243E6D7B00A81408 /* led_sysdefs_arm_k20.h */,
+			);
+			path = k20;
+			sourceTree = "<group>";
+		};
+		165D9C65243E6D7B00A81408 /* kl26 */ = {
+			isa = PBXGroup;
+			children = (
+				165D9C66243E6D7B00A81408 /* fastpin_arm_kl26.h */,
+				165D9C67243E6D7B00A81408 /* led_sysdefs_arm_kl26.h */,
+				165D9C68243E6D7B00A81408 /* fastspi_arm_kl26.h */,
+				165D9C69243E6D7B00A81408 /* clockless_arm_kl26.h */,
+				165D9C6A243E6D7B00A81408 /* fastled_arm_kl26.h */,
+			);
+			path = kl26;
+			sourceTree = "<group>";
+		};
+		165D9C6B243E6D7B00A81408 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				165D9C6C243E6D7B00A81408 /* m0clockless.h */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		165D9C6D243E6D7B00A81408 /* stm32 */ = {
+			isa = PBXGroup;
+			children = (
+				165D9C6E243E6D7B00A81408 /* clockless_arm_stm32.h */,
+				165D9C6F243E6D7B00A81408 /* fastpin_arm_stm32.h */,
+				165D9C70243E6D7B00A81408 /* fastled_arm_stm32.h */,
+				165D9C71243E6D7B00A81408 /* cm3_regs.h */,
+				165D9C72243E6D7B00A81408 /* led_sysdefs_arm_stm32.h */,
+			);
+			path = stm32;
+			sourceTree = "<group>";
+		};
+		165D9C73243E6D7B00A81408 /* d21 */ = {
+			isa = PBXGroup;
+			children = (
+				165D9C74243E6D7B00A81408 /* fastled_arm_d21.h */,
+				165D9C75243E6D7B00A81408 /* clockless_arm_d21.h */,
+				165D9C76243E6D7B00A81408 /* fastpin_arm_d21.h */,
+				165D9C77243E6D7B00A81408 /* led_sysdefs_arm_d21.h */,
+			);
+			path = d21;
+			sourceTree = "<group>";
+		};
+		165D9C78243E6D7B00A81408 /* mxrt1062 */ = {
+			isa = PBXGroup;
+			children = (
+				165D9C79243E6D7B00A81408 /* fastled_arm_mxrt1062.h */,
+				165D9C7A243E6D7B00A81408 /* led_sysdefs_arm_mxrt1062.h */,
+				165D9C7B243E6D7B00A81408 /* fastpin_arm_mxrt1062.h */,
+				165D9C7C243E6D7B00A81408 /* clockless_arm_mxrt1062.h */,
+				165D9C7D243E6D7B00A81408 /* fastspi_arm_mxrt1062.h */,
+				165D9C7E243E6D7B00A81408 /* block_clockless_arm_mxrt1062.h */,
+			);
+			path = mxrt1062;
+			sourceTree = "<group>";
+		};
+		165D9C7F243E6D7B00A81408 /* nrf52 */ = {
+			isa = PBXGroup;
+			children = (
+				165D9C80243E6D7B00A81408 /* arbiter_nrf52.h */,
+				165D9C81243E6D7B00A81408 /* fastpin_arm_nrf52_variants.h */,
+				165D9C82243E6D7B00A81408 /* fastspi_arm_nrf52.h */,
+				165D9C83243E6D7B00A81408 /* clockless_arm_nrf52.h */,
+				165D9C84243E6D7B00A81408 /* led_sysdefs_arm_nrf52.h */,
+				165D9C85243E6D7B00A81408 /* fastled_arm_nrf52.h */,
+				165D9C86243E6D7B00A81408 /* fastpin_arm_nrf52.h */,
+			);
+			path = nrf52;
+			sourceTree = "<group>";
+		};
+		165D9C87243E6D7B00A81408 /* d51 */ = {
+			isa = PBXGroup;
+			children = (
+				165D9C88243E6D7B00A81408 /* led_sysdefs_arm_d51.h */,
+				165D9C89243E6D7B00A81408 /* fastpin_arm_d51.h */,
+				165D9C8A243E6D7B00A81408 /* clockless_arm_d51.h */,
+				165D9C8B243E6D7B00A81408 /* README.txt */,
+				165D9C8C243E6D7B00A81408 /* fastled_arm_d51.h */,
+			);
+			path = d51;
+			sourceTree = "<group>";
+		};
+		165D9C9D243E6D7B00A81408 /* docs */ = {
+			isa = PBXGroup;
+			children = (
+				165D9C9E243E6D7B00A81408 /* mainpage.dox */,
+				165D9C9F243E6D7B00A81408 /* Doxyfile */,
+			);
+			path = docs;
+			sourceTree = "<group>";
+		};
+		165D9CB1243E6D7B00A81408 /* examples */ = {
+			isa = PBXGroup;
+			children = (
+				165D9CB2243E6D7B00A81408 /* Blink */,
+				165D9CB4243E6D7B00A81408 /* Cylon */,
+				165D9CB6243E6D7B00A81408 /* DemoReel100 */,
+				165D9CB8243E6D7B00A81408 /* RGBCalibrate */,
+				165D9CBA243E6D7B00A81408 /* Multiple */,
+				165D9CC7243E6D7B00A81408 /* FirstLight */,
+				165D9CC9243E6D7B00A81408 /* NoisePlusPalette */,
+				165D9CCB243E6D7B00A81408 /* SmartMatrix */,
+				165D9CCD243E6D7B00A81408 /* RGBSetDemo */,
+				165D9CCF243E6D7B00A81408 /* XYMatrix */,
+				165D9CD1243E6D7B00A81408 /* Pintest */,
+				165D9CD3243E6D7B00A81408 /* Fire2012WithPalette */,
+				165D9CD5243E6D7B00A81408 /* ColorPalette */,
+				165D9CD7243E6D7B00A81408 /* Fire2012 */,
+				165D9CD9243E6D7B00A81408 /* TwinkleFox */,
+				165D9CDB243E6D7B00A81408 /* ColorTemperature */,
+				165D9CDD243E6D7B00A81408 /* Pride2015 */,
+				165D9CDF243E6D7B00A81408 /* Noise */,
+				165D9CE1243E6D7B00A81408 /* AnalogOutput */,
+				165D9CE3243E6D7B00A81408 /* Pacifica */,
+				165D9CE5243E6D7B00A81408 /* Ports */,
+				165D9CE8243E6D7B00A81408 /* NoisePlayground */,
+			);
+			path = examples;
+			sourceTree = "<group>";
+		};
+		165D9CB2243E6D7B00A81408 /* Blink */ = {
+			isa = PBXGroup;
+			children = (
+				165D9CB3243E6D7B00A81408 /* Blink.ino */,
+			);
+			path = Blink;
+			sourceTree = "<group>";
+		};
+		165D9CB4243E6D7B00A81408 /* Cylon */ = {
+			isa = PBXGroup;
+			children = (
+				165D9CB5243E6D7B00A81408 /* Cylon.ino */,
+			);
+			path = Cylon;
+			sourceTree = "<group>";
+		};
+		165D9CB6243E6D7B00A81408 /* DemoReel100 */ = {
+			isa = PBXGroup;
+			children = (
+				165D9CB7243E6D7B00A81408 /* DemoReel100.ino */,
+			);
+			path = DemoReel100;
+			sourceTree = "<group>";
+		};
+		165D9CB8243E6D7B00A81408 /* RGBCalibrate */ = {
+			isa = PBXGroup;
+			children = (
+				165D9CB9243E6D7B00A81408 /* RGBCalibrate.ino */,
+			);
+			path = RGBCalibrate;
+			sourceTree = "<group>";
+		};
+		165D9CBA243E6D7B00A81408 /* Multiple */ = {
+			isa = PBXGroup;
+			children = (
+				165D9CBB243E6D7B00A81408 /* ParallelOutputDemo */,
+				165D9CBD243E6D7B00A81408 /* ArrayOfLedArrays */,
+				165D9CBF243E6D7B00A81408 /* MultiArrays */,
+				165D9CC1243E6D7B00A81408 /* OctoWS2811Demo */,
+				165D9CC3243E6D7B00A81408 /* MirroringSample */,
+				165D9CC5243E6D7B00A81408 /* MultipleStripsInOneArray */,
+			);
+			path = Multiple;
+			sourceTree = "<group>";
+		};
+		165D9CBB243E6D7B00A81408 /* ParallelOutputDemo */ = {
+			isa = PBXGroup;
+			children = (
+				165D9CBC243E6D7B00A81408 /* ParallelOutputDemo.ino */,
+			);
+			path = ParallelOutputDemo;
+			sourceTree = "<group>";
+		};
+		165D9CBD243E6D7B00A81408 /* ArrayOfLedArrays */ = {
+			isa = PBXGroup;
+			children = (
+				165D9CBE243E6D7B00A81408 /* ArrayOfLedArrays.ino */,
+			);
+			path = ArrayOfLedArrays;
+			sourceTree = "<group>";
+		};
+		165D9CBF243E6D7B00A81408 /* MultiArrays */ = {
+			isa = PBXGroup;
+			children = (
+				165D9CC0243E6D7B00A81408 /* MultiArrays.ino */,
+			);
+			path = MultiArrays;
+			sourceTree = "<group>";
+		};
+		165D9CC1243E6D7B00A81408 /* OctoWS2811Demo */ = {
+			isa = PBXGroup;
+			children = (
+				165D9CC2243E6D7B00A81408 /* OctoWS2811Demo.ino */,
+			);
+			path = OctoWS2811Demo;
+			sourceTree = "<group>";
+		};
+		165D9CC3243E6D7B00A81408 /* MirroringSample */ = {
+			isa = PBXGroup;
+			children = (
+				165D9CC4243E6D7B00A81408 /* MirroringSample.ino */,
+			);
+			path = MirroringSample;
+			sourceTree = "<group>";
+		};
+		165D9CC5243E6D7B00A81408 /* MultipleStripsInOneArray */ = {
+			isa = PBXGroup;
+			children = (
+				165D9CC6243E6D7B00A81408 /* MultipleStripsInOneArray.ino */,
+			);
+			path = MultipleStripsInOneArray;
+			sourceTree = "<group>";
+		};
+		165D9CC7243E6D7B00A81408 /* FirstLight */ = {
+			isa = PBXGroup;
+			children = (
+				165D9CC8243E6D7B00A81408 /* FirstLight.ino */,
+			);
+			path = FirstLight;
+			sourceTree = "<group>";
+		};
+		165D9CC9243E6D7B00A81408 /* NoisePlusPalette */ = {
+			isa = PBXGroup;
+			children = (
+				165D9CCA243E6D7B00A81408 /* NoisePlusPalette.ino */,
+			);
+			path = NoisePlusPalette;
+			sourceTree = "<group>";
+		};
+		165D9CCB243E6D7B00A81408 /* SmartMatrix */ = {
+			isa = PBXGroup;
+			children = (
+				165D9CCC243E6D7B00A81408 /* SmartMatrix.ino */,
+			);
+			path = SmartMatrix;
+			sourceTree = "<group>";
+		};
+		165D9CCD243E6D7B00A81408 /* RGBSetDemo */ = {
+			isa = PBXGroup;
+			children = (
+				165D9CCE243E6D7B00A81408 /* RGBSetDemo.ino */,
+			);
+			path = RGBSetDemo;
+			sourceTree = "<group>";
+		};
+		165D9CCF243E6D7B00A81408 /* XYMatrix */ = {
+			isa = PBXGroup;
+			children = (
+				165D9CD0243E6D7B00A81408 /* XYMatrix.ino */,
+			);
+			path = XYMatrix;
+			sourceTree = "<group>";
+		};
+		165D9CD1243E6D7B00A81408 /* Pintest */ = {
+			isa = PBXGroup;
+			children = (
+				165D9CD2243E6D7B00A81408 /* Pintest.ino */,
+			);
+			path = Pintest;
+			sourceTree = "<group>";
+		};
+		165D9CD3243E6D7B00A81408 /* Fire2012WithPalette */ = {
+			isa = PBXGroup;
+			children = (
+				165D9CD4243E6D7B00A81408 /* Fire2012WithPalette.ino */,
+			);
+			path = Fire2012WithPalette;
+			sourceTree = "<group>";
+		};
+		165D9CD5243E6D7B00A81408 /* ColorPalette */ = {
+			isa = PBXGroup;
+			children = (
+				165D9CD6243E6D7B00A81408 /* ColorPalette.ino */,
+			);
+			path = ColorPalette;
+			sourceTree = "<group>";
+		};
+		165D9CD7243E6D7B00A81408 /* Fire2012 */ = {
+			isa = PBXGroup;
+			children = (
+				165D9CD8243E6D7B00A81408 /* Fire2012.ino */,
+			);
+			path = Fire2012;
+			sourceTree = "<group>";
+		};
+		165D9CD9243E6D7B00A81408 /* TwinkleFox */ = {
+			isa = PBXGroup;
+			children = (
+				165D9CDA243E6D7B00A81408 /* TwinkleFox.ino */,
+			);
+			path = TwinkleFox;
+			sourceTree = "<group>";
+		};
+		165D9CDB243E6D7B00A81408 /* ColorTemperature */ = {
+			isa = PBXGroup;
+			children = (
+				165D9CDC243E6D7B00A81408 /* ColorTemperature.ino */,
+			);
+			path = ColorTemperature;
+			sourceTree = "<group>";
+		};
+		165D9CDD243E6D7B00A81408 /* Pride2015 */ = {
+			isa = PBXGroup;
+			children = (
+				165D9CDE243E6D7B00A81408 /* Pride2015.ino */,
+			);
+			path = Pride2015;
+			sourceTree = "<group>";
+		};
+		165D9CDF243E6D7B00A81408 /* Noise */ = {
+			isa = PBXGroup;
+			children = (
+				165D9CE0243E6D7B00A81408 /* Noise.ino */,
+			);
+			path = Noise;
+			sourceTree = "<group>";
+		};
+		165D9CE1243E6D7B00A81408 /* AnalogOutput */ = {
+			isa = PBXGroup;
+			children = (
+				165D9CE2243E6D7B00A81408 /* AnalogOutput.ino */,
+			);
+			path = AnalogOutput;
+			sourceTree = "<group>";
+		};
+		165D9CE3243E6D7B00A81408 /* Pacifica */ = {
+			isa = PBXGroup;
+			children = (
+				165D9CE4243E6D7B00A81408 /* Pacifica.ino */,
+			);
+			path = Pacifica;
+			sourceTree = "<group>";
+		};
+		165D9CE5243E6D7B00A81408 /* Ports */ = {
+			isa = PBXGroup;
+			children = (
+				165D9CE6243E6D7B00A81408 /* PJRCSpectrumAnalyzer */,
+			);
+			path = Ports;
+			sourceTree = "<group>";
+		};
+		165D9CE6243E6D7B00A81408 /* PJRCSpectrumAnalyzer */ = {
+			isa = PBXGroup;
+			children = (
+				165D9CE7243E6D7B00A81408 /* PJRCSpectrumAnalyzer.ino */,
+			);
+			path = PJRCSpectrumAnalyzer;
+			sourceTree = "<group>";
+		};
+		165D9CE8243E6D7B00A81408 /* NoisePlayground */ = {
+			isa = PBXGroup;
+			children = (
+				165D9CE9243E6D7B00A81408 /* NoisePlayground.ino */,
+			);
+			path = NoisePlayground;
+			sourceTree = "<group>";
+		};
+		165D9CEA243E6D7B00A81408 /* lib8tion */ = {
+			isa = PBXGroup;
+			children = (
+				165D9CEB243E6D7B00A81408 /* trig8.h */,
+				165D9CEC243E6D7B00A81408 /* random8.h */,
+				165D9CED243E6D7B00A81408 /* math8.h */,
+				165D9CEE243E6D7B00A81408 /* scale8.h */,
+			);
+			path = lib8tion;
+			sourceTree = "<group>";
+		};
+		165D9CF9243E6D7B00A81408 /* extras */ = {
+			isa = PBXGroup;
+			children = (
+				165D9CFA243E6D7B00A81408 /* RainbowDemo.bin.zip */,
+				165D9CFB243E6D7B00A81408 /* RainbowDemo.s65 */,
+				165D9CFC243E6D7B00A81408 /* FastLED6502.s65 */,
+				165D9CFD243E6D7B00A81408 /* AppleII.s65 */,
+			);
+			path = extras;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		165D9C22243E6C1A00A81408 /* infm */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 165D9C2A243E6C1A00A81408 /* Build configuration list for PBXNativeTarget "infm" */;
+			buildPhases = (
+				165D9C1F243E6C1A00A81408 /* Sources */,
+				165D9C20243E6C1A00A81408 /* Frameworks */,
+				165D9C21243E6C1A00A81408 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = infm;
+			productName = infm;
+			productReference = 165D9C23243E6C1A00A81408 /* infm */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		165D9C1B243E6C1A00A81408 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = "Fedotov Igor";
+				TargetAttributes = {
+					165D9C22243E6C1A00A81408 = {
+						CreatedOnToolsVersion = 11.4;
+					};
+				};
+			};
+			buildConfigurationList = 165D9C1E243E6C1A00A81408 /* Build configuration list for PBXProject "infm" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 165D9C1A243E6C1A00A81408;
+			productRefGroup = 165D9C24243E6C1A00A81408 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				165D9C22243E6C1A00A81408 /* infm */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		165D9C1F243E6C1A00A81408 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				165D9D07243E6D7B00A81408 /* bitswap.cpp in Sources */,
+				165D9D06243E6D7B00A81408 /* platforms.cpp in Sources */,
+				165D9D03243E6D7B00A81408 /* noise.cpp in Sources */,
+				165D9D08243E6D7B00A81408 /* colorpalettes.cpp in Sources */,
+				165D9CFF243E6D7B00A81408 /* power_mgt.cpp in Sources */,
+				165D9D04243E6D7B00A81408 /* hsv2rgb.cpp in Sources */,
+				165D9D05243E6D7B00A81408 /* wiring.cpp in Sources */,
+				165D9D00243E6D7B00A81408 /* colorutils.cpp in Sources */,
+				165D9D01243E6D7B00A81408 /* lib8tion.cpp in Sources */,
+				165D9D02243E6D7B00A81408 /* FastLED.cpp in Sources */,
+				165D9C27243E6C1A00A81408 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		165D9C28243E6C1A00A81408 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		165D9C29243E6C1A00A81408 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		165D9C2B243E6C1A00A81408 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 476DPCGZ25;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		165D9C2C243E6C1A00A81408 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 476DPCGZ25;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		165D9C1E243E6C1A00A81408 /* Build configuration list for PBXProject "infm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				165D9C28243E6C1A00A81408 /* Debug */,
+				165D9C29243E6C1A00A81408 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		165D9C2A243E6C1A00A81408 /* Build configuration list for PBXNativeTarget "infm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				165D9C2B243E6C1A00A81408 /* Debug */,
+				165D9C2C243E6C1A00A81408 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 165D9C1B243E6C1A00A81408 /* Project object */;
+}
